@@ -22,6 +22,9 @@ class StudentController extends Controller
         return view('admin/index')->with('student', $student);
     }
     // create
+    public function create(){
+        return view('admin/student/create');
+    }
     // store
     // show
     // edit
