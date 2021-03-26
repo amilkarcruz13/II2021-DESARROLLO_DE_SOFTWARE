@@ -29,5 +29,7 @@ Route::get('/template', function(){
     return view('template/index');
 });
 Route::resource('student', StudentController::class);
+Route::get('student/{id}/destroy', [StudentController::class, 'destroy'])->name('student.destroy');
+
 //index, create, store, edit, update, show, destroy; ...more functions
 // Route::resource('career', CareerController::class);
